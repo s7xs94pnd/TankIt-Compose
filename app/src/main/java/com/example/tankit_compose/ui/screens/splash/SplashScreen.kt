@@ -1,4 +1,4 @@
-package com.example.tankit_compose.ui.screens
+package com.example.tankit_compose.ui.screens.splash
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,6 +11,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -47,6 +48,7 @@ fun SplashScreen(navigate: () -> Unit) {
         verticalArrangement = Arrangement.Center
     ) {
         Text(
+            color = Color.Blue,
             modifier = Modifier.padding(bottom = 32.dp),
             text = "Tank It",
             fontSize = 32.sp,
